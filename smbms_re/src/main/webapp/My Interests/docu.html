@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p id="js">JavaScript</p>
+    <div id="div">
+        <p id="se">JavaSE</p>
+        <p id="ee">JavaEE</p>
+        <p id="me">JavaME</p>
+    </div>
+<!--    <input type="text" id="username">;-->
+    <form action="#" method="post">
+        用户名<input type="text" id="username" name="username"><br>
+        密码<input type="password" id="pwd" name="pwd"><br>
+        <button type="submit" onclick="button()">
+            提交
+        </button>
+    </form>
+    <a href="" id="test-jquery">click me</a><br>
+    mouse: <span id="mouseMove"></span>
+    <div id="divMove">
+        在这里移动鼠标试试
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#divMove').mousemove(function (e) {
+            $('#mouseMove').text('x:'+e.pageX+' y:'+e.pageY);
+        })
+    })
+    let button = function () {
+        let uname = document.getElementById("username");
+        let pwd   = document.getElementById("pwd");
+        console.log(uname.value);
+        console.log(pwd.value);
+        //return true;
+    }
+    var js = document.getElementById("js");
+    var div = document.getElementById("div");
+    div.appendChild(js);
+
+    let newP = document.createElement("p");
+    //newP.id = "newP";
+    newP.setAttribute('id', 'newP');
+    newP.innerText = "NiuPi";
+    div.appendChild(newP);
+    var myStyle = document.createElement("style");
+    myStyle.setAttribute("type", "text/css");
+    myStyle.innerHTML = "body{background-color: chartreuse;}";
+    document.getElementsByTagName("head")[0].appendChild(myStyle);
+    // let username = document.getElementById("username");
+    $('#test-jquery').click(function () {
+        alert('hello JQuery');
+    })
+</script>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--绑定一个对应的Mapper接口-->
+<mapper namespace="com.Ray.dao.provider.ProviderMapper">
+<!--    <resultMap id="UserMap" type="User">-->
+<!--&lt;!&ndash;        <result column="id" property="id"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="name" property="name"/>&ndash;&gt;-->
+<!--        <result column="pwd" property="password"/>-->
+<!--    </resultMap>-->
+<!--    &lt;!&ndash;   查询语句 &ndash;&gt;-->
+    <select id="getProviderByID" resultType="Provider">
+        select * from smbms_provider where id=#{id}
+    </select>
+<!--    <select id="getProviderList" parameterType="map" resultType="Provider">-->
+<!--        select * from smbms_provider where proName=#{proName} and proCode=#{proCode}-->
+<!--    </select>-->
+    <select id="getProviderList" resultType="Provider">
+        select * from smbms_provider
+    </select>
+    <select id="getProviderListMap" parameterType="map" resultType="Provider">
+        select * from smbms_provider where proName like #{proName} and proCode like #{proCode}
+    </select>
+</mapper>

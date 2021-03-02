@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd/common/head.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd/common" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd/goodsView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd/showAllGoods.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd/showDrink.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd_re/test.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/FrontEnd_re" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/bill/billview.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/bill" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/common/head.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/common" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/show_Echarts.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/userlist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp" />
+      </map>
+    </option>
+  </component>
+</project>
